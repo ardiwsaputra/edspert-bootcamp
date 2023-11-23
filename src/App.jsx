@@ -4,7 +4,7 @@ import ProductCard from "./components/ProductCard"
 function App() {
   const [productList, setProductList] = useState([
     {
-      courseType: "Intensive Bootcamp",
+      courseType: "Bootcamp",
       title: "Programming Laravel",
       description: "Getting Started with Laravel 9",
       price: 600000,
