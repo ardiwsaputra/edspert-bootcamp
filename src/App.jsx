@@ -59,6 +59,7 @@ function App() {
             price={product.price}
             discountPrice={product.discountPrice}
             addShoppingCart={(selectedProduct) => setShoppingCart([...shoppingCart, selectedProduct])}
+            testFunction={() => console.log("Test Function")}
           />
         ))}
       </main>

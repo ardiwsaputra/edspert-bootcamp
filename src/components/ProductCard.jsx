@@ -1,4 +1,4 @@
-function ProductCard({ courseType = "Bootcamp",title, description, price, discountPrice, addShoppingCart }) {
+function ProductCard({ courseType = "Bootcamp",title, description, price, discountPrice, addShoppingCart, testFunction}) {
   return (
     <section className="w-[352px]">
       <div className="bg-[#152A46] flex flex-row rounded-t-[20px]">
@@ -39,6 +39,9 @@ function ProductCard({ courseType = "Bootcamp",title, description, price, discou
         <button className="bg-[#0ACF83] w-full h-[48px] rounded-[8px] text-white mb-4"
           onClick={() => addShoppingCart({ courseType, title, description, price, discountPrice })}
         >Add Cart</button>
+        <button className="bg-[#0ACF83] w-full h-[48px] rounded-[8px] text-white mb-4"
+          onClick={() => testFunction()}
+        >Test  Function</button>
       </div>
     </section>
   )
