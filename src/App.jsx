@@ -58,7 +58,7 @@ function App() {
             description={product.description}
             price={product.price}
             discountPrice={product.discountPrice}
-            addShoppingCart={(prod) => setShoppingCart([...shoppingCart, prod])}
+            addShoppingCart={(selectedProduct) => setShoppingCart([...shoppingCart, selectedProduct])}
           />
         ))}
       </main>
